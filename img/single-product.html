@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Ecommerce webpage</title>
+
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
+    <!-- My Css Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section id="header">
+        <a href="#"><img src="./logo.png" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <div id="close">
+                    <i id="close-icon" class="fa-solid fa-xmark"></i>
+                </div>
+
+            </ul>
+        </div>
+
+        <div id="hamburger">
+            <i id="hamburger-icon" class="fa-solid fa-bars"></i>
+        </div>
+    </section>
+
+    <section id="single-product-page" class="section-p1">
+        <div class="single-product-image">
+            <img src="./products/f1.jpg" id="main-image" width="100%" alt="">
+            <div class="small-images">
+                <div class="small-image-col">
+                    <img src="./products/f1.jpg" class="small-image" width="100%" alt="">
+                </div>
+                <div class="small-image-col">
+                    <img src="./products/f2.jpg" class="small-image" width="100%" alt="">
+                </div>
+                <div class="small-image-col">
+                    <img src="./products/f3.jpg" class="small-image" width="100%" alt="">
+                </div>
+                <div class="small-image-col">
+                    <img src="./products/f4.jpg" class="small-image" width="100%" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="single-product-content">
+            <h6>Home/T-shirt</h6>
+            <h4>Men's Fashion T-Shirt</h4>
+            <h2>$139.00</h2>
+            <select style="display: block;">
+                <option value="">Select Size</option>
+                <option value="">S</option>
+                <option value="">M</option>
+                <option value="">L</option>
+                <option value="">XL</option>
+                <option value="">XXL</option>
+                <option value="">XXXL</option>
+            </select>
+            <input type="number" value="1">
+            <button>Add to Cart</button>
+            <h3>Product Details</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eos minus quas iure sit nisi molestias
+                provident esse qui nihil. Deleniti, cupiditate ab eum explicabo fugiat vitae adipisci illo repudiandae
+                officiis consequuntur cumque inventore reprehenderit quaerat architecto, nam reiciendis eaque vel, neque
+                impedit similique excepturi aperiam recusandae est ad. Tenetur!</p>
+
+        </div>
+
+    </section>
+
+
+    <section id="news-letter" class="section-p1 section-m1">
+        <div>
+            <h2>Sign Up For Newsletter</h2>
+            <p>Get E-mail Updates about our latest shop and <span style="color: orange;">special offers.</span></p>
+        </div>
+        <div class="news-letter-signup">
+            <input type="email" placeholder="Write your Email">
+            <button>Sign up</button>
+        </div>
+
+    </section>
+
+    <footer id="footer" class="section-p1">
+
+        <div class="footer-main">
+            <div class="footer-col">
+                <img class="logo" src="./logo.png" alt="">
+                <h4>Contact</h4>
+                <p style="margin-bottom: 0;"><strong>Address:</strong> Adarsh Colony ward no. 5 Hodal,Palwal</p>
+                <p style="margin-bottom: 0;"><strong>Phone:</strong> 07015726958, 08813964866</p>
+                <p><strong>Hours:</strong> 06:00 - 18:00 Mon-Sat</p>
+                <h4>Follow us</h4>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>About</h4>
+                <a href="">About us</a>
+                <a href="">Delivery Information</a>
+                <a href="">Privacy Policy</a>
+                <a href="">Terms and Condition</a>
+                <a href="">Contact Us</a>
+
+            </div>
+            <div class="footer-col">
+                <h4>My Account</h4>
+                <a href="">Sign in</a>
+                <a href="">View Cart</a>
+                <a href="">My Wishlist</a>
+                <a href="">Track My Order</a>
+                <a href="">Help</a>
+            </div>
+
+            <div class="footer-col">
+                <h4>Install App</h4>
+                <p>From App Store or Google Play</p>
+                <div class="download">
+                    <img class="pay" src="./pay/app.jpg" alt="">
+                    <img class="pay" src="./pay/play.jpg" alt="">
+                </div>
+                <p>Secured Payments Gateway</p>
+                <div class="payment">
+                    <img src="./pay/pay.png" alt="">
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+<script>
+    let bigImage = document.getElementById("main-image")
+    let smallImage = document.getElementsByClassName("small-image")
+
+    smallImage[0].onclick = function () {
+        bigImage.src = smallImage[0].src
+    }
+    smallImage[1].onclick = function () {
+        bigImage.src = smallImage[1].src
+    }
+    smallImage[2].onclick = function () {
+        bigImage.src = smallImage[2].src
+    }
+    smallImage[3].onclick = function () {
+        bigImage.src = smallImage[3].src
+    }
+</script>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

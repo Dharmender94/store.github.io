@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Ecommerce webpage</title>
+
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
+    <!-- My Css Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section id="header">
+        <a href="#"><img src="./logo.png" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href=cart.html class="active"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <div id="close">
+                    <i id="close-icon" class="fa-solid fa-xmark"></i>
+                </div>
+
+            </ul>
+        </div>
+
+        <div id="hamburger">
+            <i id="hamburger-icon" class="fa-solid fa-bars"></i>
+        </div>
+    </section>
+
+    <section id="shop-header" class="section-p1 about-header">
+        <h1>#cart</h1>
+        <p>Add your coupon code & save upto 70%!</p>
+    </section>
+
+    <section id="cart-page" class="section-p1">
+        <table>
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="first-row">
+                    <td>
+                        <i id="remove" class="fa-solid fa-xmark"></i>
+
+                    </td>
+                    <td>
+                        <img src="./products/f1.jpg" alt="">
+                    </td>
+                    <td>Cartoon Astranaut T-shirts
+                    </td>
+                    <td>$<input type="text" class="prd_price"  value="18" readonly> 
+                    </td>
+                    <td><input type="number" class="price"  max="10" min="1"></td>
+                    <td>
+                        <input type="text" class="prd_total"  value="0"> 
+                    </td>
+                </tr>
+
+                <tr class="first-row">
+                    <td>
+                        <i id="remove" class="fa-solid fa-xmark"></i>
+
+                    </td>
+                    <td>
+                        <img src="./products/f2.jpg" alt="">
+                    </td>
+                    <td>Cartoon Astranaut T-shirts
+                    </td>
+                    <td>$<input type="text" class="prd_price"  value="18" readonly> 
+                    </td>
+                    <td><input type="number" class="price"  max="10" min="1"></td>
+                    <td>
+                        <input type="text" class="prd_total"  value="0"> 
+                            
+                        
+                    </td>
+                </tr>
+
+                <tr class="first-row">
+                    <td>
+                        <i id="remove" class="fa-solid fa-xmark"></i>
+
+                    </td>
+                    <td>
+                        <img src="./products/f3.jpg" alt="">
+                    </td>
+                    <td>Cartoon Astranaut T-shirts
+                    </td>
+                    <td>$<input type="text" class="prd_price"  value="18" readonly> 
+                    </td>
+                    <td><input type="number" class="price"  max="10" min="1"></td>
+                    <td>
+                        <input type="text" class="prd_total"  value="0"> 
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="coupon-code" class="section-p1">
+        <div class="coupon">
+            <h3>Apply Coupon</h3>
+            <input type="text" placeholder="Enter Your Coupon code">
+            <button>Apply</button>
+        </div>
+        <div class="total-price">
+            <h3>Cart Totals</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotals</td>
+                    <td>$ <span class="cart-total"></span> </td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>$ <span class="final-total"></span> </td>
+                </tr>
+            </table>
+            <button>Proceed to Checkout</button>
+        </div>
+    </section>
+
+
+    <footer id="footer" class="section-p1">
+
+        <div class="footer-main">
+            <div class="footer-col">
+                <img class="logo" src="./logo.png" alt="">
+                <h4>Contact</h4>
+                <p style="margin-bottom: 0;"><strong>Address:</strong> Adarsh Colony ward no. 5 Hodal,Palwal</p>
+                <p style="margin-bottom: 0;"><strong>Phone:</strong> 07015726958, 08813964866</p>
+                <p><strong>Hours:</strong> 06:00 - 18:00 Mon-Sat</p>
+                <h4>Follow us</h4>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>About</h4>
+                <a href="">About us</a>
+                <a href="">Delivery Information</a>
+                <a href="">Privacy Policy</a>
+                <a href="">Terms and Condition</a>
+                <a href="">Contact Us</a>
+
+            </div>
+            <div class="footer-col">
+                <h4>My Account</h4>
+                <a href="">Sign in</a>
+                <a href="">View Cart</a>
+                <a href="">My Wishlist</a>
+                <a href="">Track My Order</a>
+                <a href="">Help</a>
+            </div>
+
+            <div class="footer-col">
+                <h4>Install App</h4>
+                <p>From App Store or Google Play</p>
+                <div class="download">
+                    <img class="pay" src="./pay/app.jpg" alt="">
+                    <img class="pay" src="./pay/play.jpg" alt="">
+                </div>
+                <p>Secured Payments Gateway</p>
+                <div class="payment">
+                    <img src="./pay/pay.png" alt="">
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
